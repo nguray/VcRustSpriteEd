@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'gtk_sprite_ed'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=gtk_sprite_ed",
+                    "--package=gtk_sprite_ed"
+                ],
+                "filter": {
+                    "name": "gtk_sprite_ed",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'gtk_sprite_ed'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=gtk_sprite_ed",
+                    "--package=gtk_sprite_ed"
+                ],
+                "filter": {
+                    "name": "gtk_sprite_ed",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
