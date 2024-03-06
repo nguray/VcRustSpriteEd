@@ -1,0 +1,9 @@
+
+Création du fichier des resource :
+    Aller dans le répertoire contenant "res"
+    lancer  : glib-compile-resources --sourcedir res myapp.gresource.xml --target src/myapp.gresource
+    le fichier généré "myapp.gresource" est dans dans "src"
+
+remarques :
+    En cas de modification de "gtk_sprite_ed.glade" il faut penser à le recopier dans "res"
+avant de lancer "glib-compile-resources ..."
